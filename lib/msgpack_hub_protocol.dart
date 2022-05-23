@@ -134,7 +134,7 @@ class MessagePackHubProtocol implements IHubProtocol {
         headers: headers,
         invocationId: data[2] as String?,
         streamIds: [],
-        arguments: List<Object>.from(data[4]));
+        arguments: List<Object?>.from(data[4]));
 
     return message;
   }
